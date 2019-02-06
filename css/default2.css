@@ -1,0 +1,220 @@
+
+body {
+ 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  	font-weight: 400;
+  	font-size: 16px;
+  	line-height: 1.7;
+  	color: #828282;
+  	background: #fff;
+}
+
+a:hover{
+    text-decoration: none;
+	color: #ffffff;
+}
+
+
+.navbar {
+	position: absolute;
+	margin-right: auto;
+    margin-left: auto;
+	width: 100%;
+	background: #333333;
+	height: 70px;
+}
+
+.elemento-lista {
+	padding: 20px;
+	color: rgba(255, 255, 255, 0.5)
+}
+
+.lista-ativo {
+	color: #FFFFFF
+}
+
+.menu-topo {
+	height: 100%;
+	padding-top: 20px;
+}
+
+.logo-ted {
+	z-index: 90000;
+    height: 50px;
+    position: relative;
+    top: -8px;
+	cursor: pointer;
+}
+.elemento-lista-inscricao {
+	color: #FFFFFF;
+	background: #e62c1f;
+	border:1px solid #e62c1f;
+	padding: 10px 15px 10px 15px;
+	border-radius: 5px;
+	font-weight: bold;
+		
+}
+
+.bunner {
+	height: 800px;
+	background: #fffccc;
+}
+
+.sobre {
+	padding-top: 40px;
+}
+
+.strong-black {
+	color: #000000;
+	font-weight: bold;
+}
+
+.strong-ted {
+	color: #E62B1E;
+	font-weight: bold;
+}
+
+.strong-ted-x {
+	color: #E62B1E;
+	font-weight: bold;
+	font-size: 22px;
+	position: relative;
+	top: -7px	
+}
+
+.information-area {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.text-informative {	
+	text-align: justify !important;
+}
+
+.foto-membro-equipe {
+	width: 90%;
+	border-radius: 1000px;
+}
+
+.information-equipe {
+	padding-top: 25px;
+	padding-top: 25px;
+}
+
+.lista-membros {
+	padding-top: 25px;
+	padding-top: 25px;
+}
+
+.div-foto-membro-equipe {
+	margin: 5%;
+}
+
+.nome-membro-equipe {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: #000000;
+}
+
+.profile-membro-equipe {
+	text-align: justify;
+}
+
+.membro-equipe {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.information-palastras {
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+.lista-palestrantes {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.foto-palestrante-l {
+	width: 90%;
+	border-radius: 100000px;
+}
+
+.nome-palestrante-l {
+	text-align: left;
+}
+
+.profile-palestrante-l {
+	text-align: left;
+}
+
+.box-palestrante-l {
+	background: #eaeaea;
+	padding: 15px;
+}
+
+.box-palestrante-space {
+	padding-bottom: 20px;
+}
+
+.box-palestrante-r {
+	background: #eaeaea;
+	padding: 15px;
+}
+
+.nome-palestrante-r {
+	text-align: right;
+}
+
+.profile-palestrante-r {
+	text-align: right;
+}
+
+.foto-palestrante-r {
+	width: 90%;
+	border-radius: 100000px;
+}
+
+.vcenter {
+	display:flex;
+  	justify-content:center;
+  	align-items:center;	
+}
+
+.information-programacao {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.information-patrocinio {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.information-apoio {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.box-palestra {
+	text-align: left;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: #eaeaea;
+	border-left: 6px solid #E62B1E;
+	color: #000000;
+	padding-left: 20px;
+}
+
+.date-time-palestra {
+	padding-right: 25px;
+}
+
+.information-palestra {
+	padding-left: 25px;
+}
+
+.div-box-palestra {
+	padding-bottom: 15px;
+}
