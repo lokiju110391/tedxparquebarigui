@@ -14,14 +14,6 @@ a:hover{
 }
 
 
-.navbar {
-	position: absolute;
-	margin-right: auto;
-    margin-left: auto;
-	width: 100%;
-	background: #333333;
-	height: 70px;
-}
 
 .elemento-lista {
 	padding: 20px;
@@ -35,6 +27,8 @@ a:hover{
 .menu-topo {
 	height: 100%;
 	padding-top: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 .logo-ted {
@@ -44,19 +38,25 @@ a:hover{
     top: -8px;
 	cursor: pointer;
 }
+
 .elemento-lista-inscricao {
 	color: #FFFFFF;
 	background: #e62c1f;
 	border:1px solid #e62c1f;
-	padding: 10px 15px 10px 15px;
+	padding: 8px 15px 8px 15px;
 	border-radius: 5px;
 	font-weight: bold;
 		
 }
 
 .bunner {
+	background-image: url('../imagens/TED-Talks-for-Small-Business-and-Entrepreneurs.jpg');
+	margin: 0px 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top;
 	height: 800px;
-	background: #fffccc;
 }
 
 .sobre {
@@ -218,3 +218,35 @@ a:hover{
 .div-box-palestra {
 	padding-bottom: 15px;
 }
+.ted-navbar {
+	background: rgba();
+	position: fixed;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px !important;
+	z-index: 999999;
+}
+
+.ted-navbar-sc {
+	width: 100%;
+	box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.15) !important;
+	background: #ffffff !important;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	position: fixed !important;
+	z-index: 999999;
+}
+
+.elemento-lista-s {
+	padding: 20px;
+	color: #000000;
+}
+
+.lista-ativo-s {
+	color: #e62b1e;
+}
+
+.elemento-lista-s:hover {
+	color: #e62b1e !important;
+}
+

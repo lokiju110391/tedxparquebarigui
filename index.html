@@ -31,31 +31,33 @@
 		<!-- Topo -->
 		<div class="page">
 		
-			<div class="navbar">				
-				<div class="row menu-topo">
-					<div class="col-md-2 text-left">
-						<img class="logo-ted" src="svgs/Logo1.png">
+			<div id="topo-detect" class="navbar-expand-lg ted-navbar">				
+				<div class="container">
+					<div class="row menu-topo">
+						<div class="col-md-2 text-left">
+							<img class="logo-ted" src="svgs/Logo1.png">
+						</div>
+						<div class="lista-links col-md-10 text-right">						
+							<span>
+								<a id="c1" class="elemento-lista lista-ativo" href="/">Início</a>
+							</span>
+							<span>
+								<a id="c2" class="elemento-lista" href="#">Patrocínio</a>
+							</span>
+							<span>
+								<a id="c3" class="elemento-lista" href="#">Palestrantes</a>
+							</span>
+							<span>
+								<a id="c4" class="elemento-lista" href="#">Programação</a>
+							</span>
+							<span>
+								<a id="c5" class="elemento-lista" href="#">Sobre</a>
+							</span>
+							<span>
+								<a class="elemento-lista-inscricao" href="#">Inscrição</a>
+							</span>						
+						</div>					
 					</div>
-					<div class="lista-links col-md-10 text-right">						
-						<span>
-							<a class="elemento-lista lista-ativo" href="/">Início</a>
-						</span>
-						<span>
-							<a class="elemento-lista" href="#">Patrocínio</a>
-						</span>
-						<span>
-							<a class="elemento-lista" href="#">Palestrantes</a>
-						</span>
-						<span>
-							<a class="elemento-lista" href="#">Programação</a>
-						</span>
-						<span>
-							<a class="elemento-lista" href="#">Sobre</a>
-						</span>
-						<span>
-							<a class="elemento-lista-inscricao" href="#">Inscrição</a>
-						</span>						
-					</div>					
 				</div>
 			</div>	
 			
@@ -362,5 +364,55 @@
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.stellar.js"></script>	
-	
+	<script src="js/jquery.animate-colors.js"></script>
+
+	<script type="text/javascript">
+		
+	    cor_atual = "T";
+	    
+		document.getElementsByTagName('body')[0].onscroll = function() {
+		    var scroll = $(window).scrollTop();
+
+
+		    if (scroll > 0) {
+
+		    	$("#topo-detect").removeClass("ted-navbar").addClass("ted-navbar-sc");
+				
+				$("#c1").addClass("elemento-lista-s").removeClass("elemento-listas").addClass("lista-ativo-s").removeClass("lista-ativo");
+				$("#c2").addClass("elemento-lista-s").removeClass("elemento-listas");
+				$("#c3").addClass("elemento-lista-s").removeClass("elemento-listas");
+				$("#c4").addClass("elemento-lista-s").removeClass("elemento-listas");
+				$("#c5").addClass("elemento-lista-s").removeClass("elemento-listas");
+				
+				if(cor_atual != "B") {
+					$('#topo-detect').animate({backgroundColor: '#ffffff'});
+					console.log("muda - " + cor_atual);
+				}
+				
+				
+				$(".logo-ted").attr("src", "svgs/Logo2.png");
+
+				cor_atual = "B";
+
+		    } else {
+
+		    	$("#topo-detect").addClass("ted-navbar").removeClass("ted-navbar-sc");
+
+				$("#c1").removeClass("elemento-lista-s").addClass("elemento-lista").removeClass("lista-ativo-s").addClass("lista-ativo");
+				$("#c2").removeClass("elemento-lista-s").addClass("elemento-lista");
+				$("#c3").removeClass("elemento-lista-s").addClass("elemento-lista");
+				$("#c4").removeClass("elemento-lista-s").addClass("elemento-lista");
+				$("#c5").removeClass("elemento-lista-s").addClass("elemento-lista");
+				$('#topo-detect').animate({backgroundColor: 'rgba(0,0,0,0)'});
+				$(".logo-ted").attr("src", "svgs/Logo1.png");
+
+				cor_atual = "T";
+
+		    }
+
+		};
+
+
+	</script>
+
 </html>
