@@ -116,15 +116,18 @@ a:hover{
 }
 
 .profile-membro-equipe {
-	text-align: justify;
+	text-align: center;
+	color: #000000;
 }
 
 .membro-equipe {
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 30px;
+	width: 100%;
+	max-width: 100% !important;
+	cursor: pointer;
 }
-
 
 .information-palastras {
 	padding-top: 50px;
