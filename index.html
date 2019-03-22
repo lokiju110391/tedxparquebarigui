@@ -67,7 +67,7 @@
 			
 			<div class="sobre container text-center">
 								
-				<div class="information-area">
+				<div class="information-area" id="waypoint1">
 					<h3 class="strong-black">O que e <span class="strong-ted">TED<span class="strong-ted-x">x</span></span>?</h3><br>			
 					<span class="text-informative">
 						O TEDx é um evento organizado de forma independente a fim de levar um modelo de compartilhamento no padrão TED Talks a áreas mais distantes com a intenção de disseminar conhecimento à várias comunidades. O objetivo do TEDx é compartilhar grandes ideias e dar espaço à pessoas que queiram impactar positivamente a vida de outras. Esse projeto ocorre em forma de palestras rápidas de até 18 minutos e diversas apresentações culturais em um único dia. 
@@ -95,7 +95,7 @@
 					</span>
 				</div>
 
-				<div class="information-palastras">
+				<div class="information-palastras" id="waypoint2">
 
 					<h3 class="strong-black"><span class="strong-ted">Palestrantes</span></h3>
 
@@ -527,7 +527,7 @@
 				</div>
 
 
-				<div class="information-patrocinio">
+				<div class="information-patrocinio" id="waypoint3">
 
 					<h3>Patrocínio</h3>
 
@@ -539,8 +539,7 @@
 						</div>
 
 						<div class="col-md-6">
-							<img class="foto-patrocinio-1" src="imagens/logo_sft_FHD.PNG" style="    height: 150px;
-    margin-top: 39px;">
+							<img class="foto-patrocinio-1" src="imagens/logo_sft_FHD.PNG" style="height: 150px; margin-top: 39px;">
 						</div>
 					</div>
 					<br>
@@ -631,6 +630,24 @@
 
 		};
 
+
+		$("#c5").click(function() {
+		    $([document.documentElement, document.body]).animate({
+		        scrollTop: $("#waypoint1").offset().top-100
+		    }, 2500);
+		});
+
+		$("#c3").click(function() {
+		    $([document.documentElement, document.body]).animate({
+		        scrollTop: $("#waypoint2").offset().top-100
+		    }, 2000);
+		});
+
+		$("#c2").click(function() {
+		    $([document.documentElement, document.body]).animate({
+		        scrollTop: $("#waypoint3").offset().top-100
+		    }, 2000);
+		});
 
 		function abrir_social(link) {
 			window.open(link, '_blank'); 
